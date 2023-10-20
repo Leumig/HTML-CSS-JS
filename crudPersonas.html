@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Personas</title>
+    <link rel="shortcut icon" href="./img/personas.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/crudPersonas.css" />
+    <script type="module" src="./jsParcial/crudPersonas.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="./index.html">Atrás</a> <br />
+        <h1>Crud Personas</h1>
+      </header>
+      <main>
+        <div class="contenedor-flex">
+          <section class="seccion-formulario">
+            <h2>Formulario</h2>
+            <form>
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="txtNombre"
+                id="nombre"
+                autocomplete="off"
+                required
+              />
+              <label for="apellido">Apellido</label>
+              <input
+                type="text"
+                name="txtApellido"
+                id="apellido"
+                autocomplete="off"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="txtEmail"
+                id="email"
+                autocomplete="off"
+                required
+              />
+              <label for="edad">Edad</label>
+              <input
+                type="number"
+                name="txtEdad"
+                id="edad"
+                min="18"
+                max="65"
+                value="18"
+                required
+              />
+              <fieldset>
+                <legend>Género</legend>
+                <input type="radio" name="rdoGenero" value="Femenino" checked />
+                Femenino <br />
+                <input type="radio" name="rdoGenero" value="Masculino" />
+                Masculino <br />
+              </fieldset>
+              <input type="submit" value="Agregar" id="inputSubmit"/>
+              <input type="hidden" value="Eliminar" id="inputBaja"/>
+              <input type="hidden" name="txtId" />
+            </form>
+          </section>
+          <section class="seccion-tabla">
+            <h2>Lista de Personas</h2>
+            <div id="tabla-contenedor"></div>
+          </section>
+        </div>
+      </main>
+    </main>
+  </body>
+</html>

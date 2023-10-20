@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maravillas</title>
+    <link rel="shortcut icon" href="./img/paisaje.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styleMaravillas.css" />
+    <script src="js2/dom.js" defer></script>
+    <script type="module" src="./js2/dom2.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="atras" href="index.html">Atrás</a>
+      <h1>Las 7 Maravillas</h1>
+    </header>
+    <section id="introduccion">
+      <p class="introduccion" id="primerParrafo">
+        Se denominan las nuevas siete maravillas del mundo moderno a los
+        monumentos que resultaron los ganadores en un concurso público e
+        internacional celebrado en 2007, inspirado en la lista de las siete
+        maravillas del mundo antiguo y realizado por una empresa privada de
+        nombre New Open World Corporation. Más de cien millones de votaciones
+        dieron como resultado esta nueva clasificación. La iniciativa partió del
+        empresario suizo Bernard Weber, fundador de la empresa. Las siete
+        maravillas modernas son: Chichén Itzá, en Yucatán, México; el Coliseo de
+        Roma, en Italia; la estatua del Cristo Redentor, en Río de Janeiro,
+        Brasil; la Gran Muralla China, en China; Machu Picchu, en el
+        departamento de Cuzco, Perú; Petra, en Jordania; y el Taj Mahal, en
+        Agra, India.
+      </p>
+    </section>
+
+    <main>
+      <section class="flexbox">
+        <figure>
+          <!-- <img src="img/maravillas/1chichen.jpg" alt="Chichén Itzá" /> -->
+          <div id="contenedor-imagen"></div>
+          <!-- Creo un 'div' con esta ID para hacer el ejemplo en el script dom.js -->
+          <figcaption>
+            Chichén Itzá, en la península de Yucatán (México).
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/maravillas/2coliseo.jpg" alt="Coliseo Romano" />
+          <figcaption>El Coliseo Romano, Roma (Italia).</figcaption>
+        </figure>
+
+        <figure id="redentor">
+          <img src="img/maravillas/3redentor.jpg" alt="Cristo Redentor" />
+          <figcaption>
+            La estatua del Cristo Redentor, en Río de Janeiro (Brasil).
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/maravillas/4muralla.jpg" alt="Gran Muralla China" />
+          <figcaption>La Gran Muralla China, en China.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/maravillas/5machuPichu.jpg" alt="Machu Picchu" />
+          <figcaption>Machu Picchu, en Cuzco, (Perú).</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/maravillas/6petra.jpg" alt="Petra" />
+          <figcaption>Petra, en Jordania.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/maravillas/7tajMahal.jpg" alt="Taj Mahal" />
+          <figcaption>El Taj Mahal, en la ciudad de Agra (India).</figcaption>
+        </figure>
+      </section>
+      <section class="introduccion">
+        <div id="textos">
+          <p id="primerParrafo">Este es el primer párrafo de prueba.</p>
+          <p class="rojo" id="segundoParrafo">
+            Este es el segundo párrafo de prueba.
+          </p>
+          <p id="tercerParrafo">Este es el tercer párrafo de prueba.</p>
+        </div>
+      </section>
+      <img
+        src="./img/arbol.png"
+        id="arbol"
+        alt="imagen de arbol antiguo"
+        data-descripcion="Es un arbol antiguo con una gran historia."
+      />
+      <section>
+        <h2 class="subtitulo">Listado de Películas</h2>
+        <ul id="lista"></ul>
+      </section>
+    </main>
+    <footer class="contacto">
+      <p class="destacar">Contacto</p>
+      <p>Email: junmigue7@gmail.com</p>
+      <p>Teléfono: +54 9 1136678351</p>
+    </footer>
+  </body>
+</html>

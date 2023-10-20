@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(31, 32, 39);
+    color: aliceblue;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    position: absolute;
+    top: 28px;
+    left: 80px;
+    padding: 10px 35px 10px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: solid 2px rgb(71, 98, 172);
+    border-radius: 10px;
+}
+a:hover{
+    background-color: rgb(71, 98, 172);
+    transition-duration: 300ms;
+}
+h1{
+    text-align: center;
+    margin: 0 100px 20px 100px;
+}
+
+.contenedor-flex {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: rgb(31, 32, 39);
+    color: white;
+    padding: 5px;
+    border-collapse: collapse;
+    text-align: center;
+}
+th {
+    font-size: 18px;
+    text-transform: capitalize;
+    border: solid 2px rgb(71, 98, 172);
+    border-collapse: collapse;
+    padding: 7px 10px 7px 10px;
+}
+td {
+    padding: 9px;
+    border: solid 2px rgb(71, 98, 172);
+    border-collapse: collapse;
+    text-align: center;
+}
+.filaPar {
+    background-color: rgb(34, 36, 43);
+}
+.filaSeleccionada, tbody > tr:hover {
+    background-color: rgb(71, 98, 172);
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.seccion-formulario {
+    height: min-content;
+    margin-right: 50px;
+    border: solid 2px rgb(71, 98, 172);
+    border-radius: 10px;
+    padding: 0px 20px 10px 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-tabla {
+    height: min-content;
+    /* max-height: 80vh; */
+    /* overflow-y: auto; */
+    border: solid 2px rgb(71, 98, 172);
+    border-radius: 10px;
+    padding: 0px 20px 20px 20px;
+}
+
+label {
+    font-weight: bold;
+}
+input {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(31, 32, 39);
+    border: solid 2px rgb(71, 98, 172);
+    border-radius: 4px;
+    padding: 3px;
+}
+
+fieldset {
+    width: fit-content;
+    margin-bottom: 20px;
+    border-color: rgb(71, 98, 172);
+    border-radius: 10px;
+}
+fieldset > input {
+    display: inline;
+}
+legend {
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+    color: rgb(39, 158, 28);
+    border-color: rgb(39, 158, 28);
+    border-radius: 10px;
+}
+input[type="button"] {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+    color: rgb(185, 71, 43);
+    border-color: rgb(185, 71, 43);
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(39, 158, 28);
+    color: white;
+    transition-duration: 300ms;
+}
+[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgb(185, 71, 43);
+    color: white;
+    transition-duration: 300ms;
+}

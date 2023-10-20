@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Indico los caracteres que se usaran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Indico hasta dónde se extiende la pág. -->
+    <title>Primera página</title>
+    <link rel="shortcut icon" href="./img/js.ico" type="image/x-icon">
+    <!-- Indico el ícono de la página -->
+    <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/stylePag1.css">
+  </head>
+  <body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
+      dolore dolorem facere nesciunt ea pariatur vitae autem maiores sequi
+      incidunt quo accusamus ab, assumenda reiciendis error.
+    </p>
+    <p>Ahora, viendo la clase de Baus, voy a probar cosas nuevas.</p>
+    <!-- <button onclick="alert('Hola mundo')">Saludar</button> Esto es una mala práctica, ya que estamos mezclando código JavaScript en código HTML. Es lo mismo que cuando usamos la propiedad 'style' para usar lenguaje CSS. -->
+    <button id="btnSaludar">Saludar</button>
+    <p>
+      Aprendi a vincular código JavaScript en la página web. Ahora le puedo dar
+      funciones a los botones, como el boton Saludar.
+    </p>
+    <p>
+      Hay puntos muy importantes para entender: Lo que hace el cliente (el
+      navegador) es interpretar el código HTML. Ya que HTML es un lenguaje de
+      marcado el cual se interpreta. El navegador lo que hace es interpretar
+      línea a línea el código HTML del archivo index. Index es el único recurso
+      que recibe el cliente. No recibe ni el estilos.css ni el scripts.js. Lo
+      que hace al interpretar el código es que, al llegar al 'head', lee y
+      ejecuta la línea "link rel="stylesheet" href="styleMar.css". Al hacer
+      esto, el cliente (el navegador) le envía una petición al servidor; le pide
+      el recurso del archivo styleMar.css. Entonces el servidor se lo entrega. A
+      partir de ese momento es cuando el navegador puede interpretar -de forma
+      asíncrona- el código de ese archivo css. Y exactamente lo mismo ocurre
+      cuando quiero linkear al archivo .js. La diferencia es la siguiente: Yo,
+      en el archivo scripts.js, voy a crear variables ya sea para crear botones,
+      guardar direcciones de memoria, eventos, lo que sea. Pero en el momento en
+      el que se empieza a ejecutar ese archivo js (de forma asíncrona), todavía
+      no creamos los botones. Es decir: el botón Saludar se crea recién en la
+      línea 21. Pero el linkeo al archivo js lo hacemos mucho antes, en el head.
+      Por lo tanto, cuando vaya a leer línea a línea el archivo js, el botón
+      Saludar NO existirá. Para solucionar esto hay distintas opciones. Una de
+      ellas es escribir el linkeo al scripts.js al final del body, es decir, una
+      vez que ya creamos todos los botones/controles. Otra opción más correcta es
+      mantener el linkeo en el head y hacer uso del load.
+    </p>
+    <section>
+      <table>
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td rowspan="3">G</td>
+          </tr>
+          <tr>
+            <td>H</td>
+          </tr>
+          <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="3">A</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td colspan="2" rowspan="2">D</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td rowspan="2">J</td>
+          </tr>
+          <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- <script src="scripts.js"></script> -->
+    <!-- Vinculo el archivo js. Hacerlo aca funciona y esta bien. Hace que no sea necesario usar el evento Load. Pero no es lo ideal. Lo ideal es usar el Load y que la vinculación este en el head. -->
+  </body>
+</html>

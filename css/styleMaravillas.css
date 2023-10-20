@@ -1,0 +1,110 @@
+body{
+    background-color:rgb(189, 225, 235);
+}
+
+.destacar{
+    color:gold;
+    font-weight: bold;
+}
+
+.atras{
+    border: dashed 6px rgb(13, 139, 23);
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    font-family: Lucida Sans;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    padding: 10px;
+}
+h1{
+    color:#a3dd36;
+    background-color: rgb(28, 88, 16);
+    font-family: cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 100px 20px 100px;
+}
+
+.subtitulo{
+    color:#2f4383;
+    background-color: rgb(226, 185, 95);
+    font-family: cursive;
+    font-size: 35px;
+    text-align: center;
+    margin: 0 100px 20px 100px;
+    padding: 10px;
+}
+/* Esta clase la va a usar el subtítulo que creamos dinamicamente en el archivo dom.js */
+
+.introduccion{
+    color:#000000;
+    background-color: rgb(70, 170, 201);
+    font-size: 20px;
+    font-family: cursive;
+    padding: 15px 40px 15px 40px;
+    margin: 0px 103px 0px 103px;
+}
+.rojo{
+    color:rgb(255, 255, 255);
+    background-color: rgb(170, 31, 31);
+    font-size: 20px;
+    font-family: monospace;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border: solid 5px black;
+    border-radius: 50px 0 50px 0;
+}
+figure{
+    background-color: rgba(174, 212, 221, 0.973);
+    padding: 10px;
+    border-radius: 50px 0 50px 0;
+    font-family: Lucida Sans Regular;
+    font-weight: bold;
+    width: 230px;
+}
+
+#redentor{
+    border: solid 5px rgb(28, 128, 33);
+    background-color: #dadd36;
+}
+#arbol{
+    height: 250px;
+    width: 250px;
+    border: solid 10px rgb(238, 197, 84);
+    border-radius: 0px;
+    margin: 40px 0px 40px 530px;
+}
+
+ul{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: solid 5px rgb(238, 197, 84);
+    border-radius: 25px;
+    margin: 0px 370px 0px 370px;
+}
+
+.contacto{
+    color:#f8f7bb;
+    background-color: rgb(65, 50, 3);
+    font-size: 17px;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    border: solid 3px rgb(0, 0, 0);
+    padding: 0px;
+    margin: 60px 500px 0 500px;
+}

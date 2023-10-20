@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(28, 29, 43);
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+}
+
+a{
+    color:rgb(255, 193, 79);
+}
